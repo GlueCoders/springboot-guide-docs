@@ -54,4 +54,4 @@ If Spring Boot parent pom is not inherited, then one has to specify execution ph
 ### End Note  
 As of now project has just barebones, in next steps we will add some code so that we can see it in action.  
 
-[Prev](#)			[TOC](/TOC.md)			[Next](/quick-hello-world.md)
+[Prev](#)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/quick-hello-world.md)
