@@ -41,4 +41,8 @@ Let's start one by one with the details going on in class
 - `@SpringBootApplication` - Under the hood it enables a lot of annotations which are needed to enable Spring to be able to integrate with project like `ComponentScan`, `Configuration` etc.  
 - `@RequestController` - Notifies Spring that this class is to be mapped to incoming HTTP requests.  
 - `Main method` - This is the entry point when project is started. This delegates control to `SpringApplication` which in turn will start embedded `Tomcat` container and bootstrap code and other Spring related libraries together.  
-- `@RequestMapping @GetMapping` - Used for configuring mapping of `hello` method to incoming HTTP request. In this case `hello` method will map to `/` path with `GET` HTTP method.
+- `@RequestMapping @GetMapping` - Used for configuring mapping of `hello` method to incoming HTTP request. In this case `hello` method will map to `/` path with `GET` HTTP method.  
+
+
+
+
