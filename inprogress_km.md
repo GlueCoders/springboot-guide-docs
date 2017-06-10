@@ -1,54 +1,66 @@
-## About Spring Boot Maven Plugin
-      <build>
-          <plugins>
-              <plugin>
-                  <groupId>org.springframework.boot</groupId>
-                  <artifactId>spring-boot-maven-plugin</artifactId>
-              </plugin>
-          </plugins>
-      </build>  
-      
-  Spring maven plugin to nest third party jars within package. The spring-boot-starter-parent POM includes <executions> configuration to bind the
-repackage goal. If you are not using the parent POM you will need to declare this configuration
-yourself as shown below 
+## Testing 
 
- <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin> 
-            
-            Once spring-boot-maven-plugin has been included in your pom.xml it will automatically attempt to rewrite archives to make them executable using the spring-boot:repackage goal. You should configure your project to build a jar or war (as appropriate) using the usual packaging element:
-            
-## About Spring Parent Pom
+@RunWith(SpringRunner.class)
+@WebMvcTest(Application.class)
+public class ApplicationTest {
 
-Not everyone likes inheriting from the spring-boot-starter-parent POM. You may have your
-own corporate standard parent that you need to use, or you may just prefer to explicitly declare all your
-Maven configuration.
-If you don’t want to use the spring-boot-starter-parent, you can still keep the benefit of the
-dependency management (but not the plugin management) by using a scope=import dependency
+    @Autowired
+    private MockMvc mvc;
 
+    @Test
+    public void testHello() throws Exception {
+        mvc.perform(get("/"))
+                .andExpect(status().isOk())
+                .andExpect(content().string("Hi ! Welcome to Spring Boot Guide"));
+    }
+}
 <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-dependencies</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <version>${spring.version}</version>
-            <type>pom</type>
-        </dependency>   
+        </dependency>
         
-        Alternative   
-        <parent>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-starter-parent</artifactId>
-<version>1.5.4.RELEASE</version>
-</parent>   
+        
+## Views separation in JSON Response
+Jackson Serialization View Support
 
-## 
+It can sometimes be useful to filter contextually the object that will be serialized to the HTTP response body. In order to provide such capability, Spring MVC has built-in support for rendering with Jackson’s Serialization Views.
 
+To use it with an @ResponseBody controller method or controller methods that return ResponseEntity, simply add the @JsonView annotation with a class argument specifying the view class or interface to be used:
+
+@RestController
+public class UserController {
+
+    @GetMapping("/user")
+    @JsonView(User.WithoutPasswordView.class)
+    public User getUser() {
+        return new User("eric", "7!jd#h23");
+    }
+}
+
+public class User {
+
+    public interface WithoutPasswordView {};
+    public interface WithPasswordView extends WithoutPasswordView {};
+
+    private String username;
+    private String password;
+
+    public User() {
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    @JsonView(WithoutPasswordView.class)
+    public String getUsername() {
+        return this.username;
+    }
+
+    @JsonView(WithPasswordView.class)
+    public String getPassword() {
+        return this.password;
+    }
+}
