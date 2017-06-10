@@ -24,7 +24,9 @@ yourself as shown below
                         </goals>
                     </execution>
                 </executions>
-            </plugin>  
+            </plugin> 
+            
+            Once spring-boot-maven-plugin has been included in your pom.xml it will automatically attempt to rewrite archives to make them executable using the spring-boot:repackage goal. You should configure your project to build a jar or war (as appropriate) using the usual packaging element:
             
 ## About Spring Parent Pom
 
@@ -46,5 +48,7 @@ dependency management (but not the plugin management) by using a scope=import de
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-parent</artifactId>
 <version>1.5.4.RELEASE</version>
-</parent>
+</parent>   
+
+## 
 
