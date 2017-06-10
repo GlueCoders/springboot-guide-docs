@@ -34,6 +34,6 @@ public class Application {
 }
 ```  
 Now run this class from IDE, Spring Boot logs should appear in console as shown below  
-![Spring Boot logs]({{site.baseurl}}/Capture.PNG)  
+![Spring Boot Logs]({{site.baseurl}}/assets/Capture.PNG)  
 
 On browser hit [http://localhost:8080/](http://localhost:8080/), and a response will appear in return with text "Hi ! Welcome to Spring Boot Guide". 
