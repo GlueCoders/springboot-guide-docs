@@ -1,7 +1,7 @@
 ## Including Spring Boot in Project [Maven]
 
 There are two ways to include and manage Spring Boot dependencies in project. One way is to inherit from Spring Boot parent pom, other way is to include a dependency on `spring-boot-dependencies`.   
-Code reference : https://github.com/GlueCoders/springboot-guide/releases/tag/includespringboot  
+Code reference : [https://github.com/GlueCoders/springboot-guide/releases/tag/includespringboot](https://github.com/GlueCoders/springboot-guide/releases/tag/includespringboot)  
 
 ### Spring Boot Parent Pom  
 
@@ -53,4 +53,3 @@ If Spring Boot parent pom is not inherited, then one has to specify execution ph
 ```
 ### End Note  
 As of now project has just barebones, in next steps we will add some code so that we can see it in action.
-
