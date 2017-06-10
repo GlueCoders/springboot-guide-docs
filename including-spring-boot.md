@@ -52,4 +52,6 @@ If Spring Boot parent pom is not inherited, then one has to specify execution ph
 </plugin>  
 ```
 ### End Note  
-As of now project has just barebones, in next steps we will add some code so that we can see it in action.
+As of now project has just barebones, in next steps we will add some code so that we can see it in action.  
+
+				[Prev](#)   [TOC](/TOC.md)    [Next](/quick-hello-world.md)
