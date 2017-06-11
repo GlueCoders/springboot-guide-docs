@@ -43,4 +43,4 @@ Let's start one by one with the details going on in class
 - `Main method` - This is the entry point when project is started. This delegates control to `SpringApplication` which in turn will start embedded `Tomcat` container and bootstrap code and other Spring related libraries together.  
 - `@RequestMapping @GetMapping` - Used for configuring mapping of `hello` method to incoming HTTP request. In this case `hello` method will map to `/` path with `GET` HTTP method.  
 
-[Prev](/including-spring-boot.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](#)
+[Prev](/including-spring-boot.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/rest-with-mvc.md)
