@@ -1,26 +1,4 @@
-## Testing 
-
-@RunWith(SpringRunner.class)
-@WebMvcTest(Application.class)
-public class ApplicationTest {
-
-    @Autowired
-    private MockMvc mvc;
-
-    @Test
-    public void testHello() throws Exception {
-        mvc.perform(get("/"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("Hi ! Welcome to Spring Boot Guide"));
-    }
-}
-<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        
-        
+      
 ## Views separation in JSON Response
 Jackson Serialization View Support
 
