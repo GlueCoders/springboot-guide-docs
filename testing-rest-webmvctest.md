@@ -36,6 +36,7 @@ public class BooksTest {
 `@MockBean` creates a Mockito mock of the `BookService` which is a dependency for `Books` controller. By having mock we can control the behavior of dependencies without calling the real method and really just focus on unit testing of controller class. To control the behavior of `bookService`, a `Behavior` nested class has been defined in this test cases which will be shown later.
 
 #### MockMvc Helper 
+Following are the usages of `MockMvc` instance `mvc` to perform unit testing on REST methods.
 
 ##### GET Method
 
@@ -78,7 +79,7 @@ Following test case corresponds to `addBook()` method in `Books` controller.
     }
 ```  
 `post(..` defines to make an HTTP POST request along with content and content-type defined in methods.  
-`.mapper` here is the instance of `Jackson` `ObjectMapper` which allows for serialization and deserialization of POJOs to and from JSON.  
+`mapper` here is the instance of `Jackson` `ObjectMapper` which allows for serialization and deserialization of POJOs to and from JSON.  
 
 ##### DELETE Method
 
