@@ -1,7 +1,7 @@
 ## Logging in Spring Boot
 
 By default Spring Boot includes `logback` and `slf4j` dependencies, so any application can use `SLF4J` libraries for logging. Default configuration is to log output in console.  
-
+Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/logging](https://github.com/GlueCoders/springboot-guide/releases/tag/logging)
 #### Output to file  
 To output in a file add following line to the `application.properties` in `src/main/resources` folder.    
 ```
