@@ -75,4 +75,4 @@ public class DefaultBookService implements BookService {
 ```
 `@Component` is a Spring annotation which creates a instance of the class and registers it in Bean Registry. Anywhere this bean's instance can be acquired by using @Autowired annotation as shown in REST layer.
 
-[Prev](/quick-hellow-world.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/rest-with-mvc.md)
+[Prev](/quick-hello-world.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/rest-with-mvc.md)
