@@ -24,7 +24,7 @@ This class serves as REST layer which will be mapped to HTTP requests.
 
 
 #### Business/Service Layer : BookService
-This interface is the contract to be consumed by REST layer in our application.
+Below is the interface to be consumed by REST layer in our application.
 
 ```
 public interface BookService {
@@ -73,3 +73,4 @@ public class DefaultBookService implements BookService {
     }
 }
 ```
+`@Component` is a Spring annotation which creates a instance of the class and registers it in Bean Registry. Anywhere this bean's instance can be acquired by using @Autowired annotation as shown in REST layer.
