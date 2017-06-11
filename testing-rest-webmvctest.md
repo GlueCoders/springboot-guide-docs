@@ -122,6 +122,4 @@ Fourth example defines that `addBook` should return the same instance that it re
 
 The whole class `BooksTest` can be referred in `src/tests/java` directory under `org.gluecoders.library.rest` package.  
 
-[Prev](/rest-with-mvc.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](#)
-
-
+[Prev](/rest-with-mvc.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/logging.md)
