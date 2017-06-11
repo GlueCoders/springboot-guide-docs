@@ -1,6 +1,8 @@
 ## Getting started with REST using Spring MVC
 
-Here basic REST APIs that are needed for [Library sytem](/domain.md) will be written i.e. CRUD(Create, Retrieve, Update and Delete) REST service on entity `Book`. As per the [specs](/domain.md) the `Retrieve/ Get` method will be available to both Member and Admin, only the representation will differ. For the simplcity of this topic, same representation will be returned in `GET` call. Different representations will be added once security/roles are added to application since the implementation or calls may differ. Also handling for exception scenarios will be added in later topics.
+Here basic REST APIs that are needed for [Library sytem](/domain.md) will be written i.e. CRUD(Create, Retrieve, Update and Delete) REST service on entity `Book`. As per the [specs](/domain.md) the `Retrieve/ Get` method will be available to both Member and Admin, only the representation will differ. For the simplcity of this topic, same representation will be returned in `GET` call. Different representations will be added once security/roles are added to application since the implementation or calls may differ. Also handling for exception scenarios will be added in later topics.  
+
+Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/rest-with-mvc](https://github.com/GlueCoders/springboot-guide/releases/tag/rest-with-mvc)  
 
 #### Entity Definition : Book
 
