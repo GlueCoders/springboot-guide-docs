@@ -3,6 +3,18 @@
 In [previous guide](/rest-with-mvc.md), REST Controller for `Books` was created. It is a good practice to keep the test cases upto speed with development. Here let's explore how to unit test REST methods.  
 Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/rest-with-mvc](https://github.com/GlueCoders/springboot-guide/releases/tag/rest-with-mvc)
 
+### POM Dependency  
+Include following dependency in `pom.xml` file.   
+```
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-test</artifactId>
+   <version>${spring.version}</version>
+</dependency>
+```  
+This will include libraries for `Spring Test`, `Mockito`, `Hamcrest` and other useful third party libraries required during unit testing.   
+
+
 #### @WebMvcTest  
 To test Spring MVC Controllers `@WebMvcTest` annotation is used. This annotation scans for all MVC related components and will not include regular `@Component` classes. This is often used to test one controller class  at a time and is combined with Mockito framework to mock the dependencies. Spring has `@MockBean` annotation which plays nice with Mockito library.
 
