@@ -1,6 +1,7 @@
 ## Documenting REST Services using Swagger
 
-Swagger(OpenAPI) has become the defacto standard to document the REST APIs. For this project springfox is used which plays nicely with Spring MVC. Let's get started.
+Swagger(OpenAPI) has become the defacto standard to document the REST APIs. For this project springfox is used which plays nicely with Spring MVC. Let's get started.  
+Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/swagger-docs](https://github.com/GlueCoders/springboot-guide/releases/tag/swagger-docs)  
 
 ### POM Dependency
 ```
