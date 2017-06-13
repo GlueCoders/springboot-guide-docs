@@ -101,4 +101,4 @@ This will log statements in json format which might be useful if the log output 
 ```  
 To control logging of third party libraries and other packages, different logger configurations can be added as shown above.  
 
-[Prev](/testing-rest-webmvctest.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](#)
+[Prev](/testing-rest-webmvctest.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/swagger-docs.md)
