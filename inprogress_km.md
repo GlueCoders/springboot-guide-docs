@@ -42,3 +42,14 @@ public class User {
         return this.password;
     }
 }
+
+#### Java 8 date time serialization
+```
+<dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    <version>2.8.6</version>
+</dependency>
+```
+
+### No Repository Bean
