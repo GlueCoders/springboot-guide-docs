@@ -1,7 +1,10 @@
 ## MongoDB in Spring Boot using Spring Data  
 
-The goal of Spring Data repository abstraction is to significantly reduce the amount of boilerplate code required to implement data access layers for various persistence stores. MongoDB is a document based storage, which stores data in BSON format which is similar to JSON(WIP).  
+The goal of Spring Data repository abstraction is to significantly reduce the amount of boilerplate code required to implement data access layers for various persistence stores. MongoDB is a document based storage, which stores data in BSON format which is similar to JSON.  
 Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/mongo-springdata](https://github.com/GlueCoders/springboot-guide/releases/tag/mongo-springdata)
+
+### Prerequisites  
+MongoDB (3.4) should be up and running on local machine at port 27017.  
 
 #### Spring Data MongoDB Starter POM
 ```
