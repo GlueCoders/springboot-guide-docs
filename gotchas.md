@@ -4,4 +4,11 @@
 
 2. **Unit Testing with WebMvcTest and JsonTest** - A unit test class cannot have both `@WebMcvTest` and `@JsonTest` annotations. It is better to use `ObjectMapper` explicitly for conversion of JSON and POJOs.  
 
-3. 
+3. **Using Java 8 DateTime API** - If response and request models have Java 8 DateTime API usage then below dependency has to be added, so that Jackson is able to convert json to correct type of DateTime object.  
+```
+<dependency>
+    <groupId>com.fasterxml.jackson.datatype</groupId>
+    <artifactId>jackson-datatype-jsr310</artifactId>
+    <version>2.8.6</version>
+</dependency>
+```
