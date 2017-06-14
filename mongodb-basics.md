@@ -11,11 +11,9 @@ Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/mon
   <version>${spring.version}</version>
 </dependency>
 ```
-After adding this dependency Spring Boot will automatically configure defaults for connecting to MongoDB. By default it tries connect to localhost MongoDB at port 27017. To change this configuration, one can modify `spring.data.mongodb.uri` in `application.properties`.  
+After adding this dependency Spring Boot will automatically configure defaults for connecting to MongoDB. By default it will try to connect localhost MongoDB at port 27017. To change this configuration, one can modify `spring.data.mongodb.uri` in `application.properties`.  
 
 #### Entity Models - Book
-
-Book definition is shown below.
 
 ```
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -36,9 +34,9 @@ public class Book implements Serializable {
     private String publisher;
     private long isbnCode;
 ```  
-`@Document` defines the collection name in MongoDB in which `Book` documents will be saved.
-`@Id` maps the `_id` field to `id` in `Book`. In this application, `id` is generated automatically by MongoDB.
-`@JsonIgnore` is the Jackson annotation, this is to avoid serialization of id field in json since `isbnCode` is the natural id with which clients will work.
+`@Document` defines the collection name in MongoDB in which `Book` documents will be saved.  
+`@Id` maps the `_id` field to `id` in `Book`. In this application, `id` is generated automatically by MongoDB.  
+`@JsonIgnore` is the Jackson annotation, this is to avoid serialization of id field in json since `isbnCode` is the natural id with which clients will work.  
 
 In MongoDB this object's representation will be as shown below  
 ```
