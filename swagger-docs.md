@@ -54,4 +54,4 @@ To see swagger docs, swagger-ui webjar is also needed. Let's include that also i
 
 Now start the server and visit [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html), Swagger UI should be up and running showing the Books controller method and REST endpoints.
 
-[Prev](/logging.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](#)
+[Prev](/logging.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/mongodb-basics.md)
