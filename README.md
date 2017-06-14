@@ -1,9 +1,9 @@
 # Spring Boot Guide
 
-Step by step introduction to Spring Boot and integration with other Spring projects that are out there. Domain for this project would be an Online Library Portal, below is the basic specs on how application should work. Please refer to [Table of Contents](/TOC.md) for further reading. Refer to [some caveats](/gotchas.md) that one needs to be careful about while using Spring Boot. As of writing this the Spring Boot version is *1.5.4.RELEASE*.
+Step by step introduction to Spring Boot and integration with other Spring projects that are out there. Domain for this project would be an Online Library Portal, below is the basic specs on how application should work. Please refer to [Table of Contents](/TOC.md) for further reading. Refer to [some caveats](/gotchas.md) that one needs to be careful about while using Spring Boot. As of writing this, the Spring Boot version is *1.5.4.RELEASE*.
 
 ## Reading Guidelines  
-Every topic contains a link to the code which can be downloaded as zip or from github. The project is Maven based project no extra step is required to setup the project unless explcitly mentioned in some topic. The guide is written in a incremental fashion, though you can skip through the sections if needed.
+Every topic contains a link to the code which can be downloaded as zip or from Github. The project is Maven based project no extra step is required to setup the project unless explcitly mentioned in some topic. The guide is written in an incremental fashion, though you can skip through the sections if needed.
 
 ## Library - Specs for Application
 
