@@ -46,14 +46,14 @@ In MongoDB this object's representation will be as shown below
         "title" : "Effective Java",
         "author" : "Joshua Bloch",
         "publishedYear" : {
-                "year" : 2011,
-                "month" : 8
+                "year" : 2008,
+                "month" : 5
         },
         "categories" : [
                 "Programming",
                 "Java"
         ],
-        "publisher" : "noidea",
+        "publisher" : "Addison-Wesley",
         "isbnCode" : NumberLong(1234567890)
 }
 ```  
