@@ -6,3 +6,5 @@
 4. [Testing REST Controllers WebMvcTest](/testing-rest-webmvctest.md)
 5. [Logging in Spring Boot](/logging.md)
 6. [REST documentation with Swagger](/swagger-docs.md)
+7. [Using MongoDB via Spring Data](/mongodb-basics.md)
+8. [Testing MongoDB Repositories](/testing-mongodb-springdata.md)
