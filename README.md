@@ -41,4 +41,4 @@ Every topic contains a link to the code which can be downloaded as zip or from g
 Please feel free to log an issue for any sort of improvement or content required in this guide.  
 
 *authored by Anand Rajneesh*  
-[Github project](https://github.com/GlueCoders/springboot-guide)&nbsp;&nbsp;&nbsp;&nbsp;[Github documentation project](https://github.com/GlueCoders/springboot-guide-docs)
+[Reference project](https://github.com/GlueCoders/springboot-guide)&nbsp;&nbsp;&nbsp;&nbsp;[Documentation project](https://github.com/GlueCoders/springboot-guide-docs)
