@@ -1,6 +1,7 @@
 ## Validation of Request Models using OVal  
 
-OVal is a validation framework which works by annotating `beans` with constraints.
+OVal is a validation framework which works by annotating `beans` with constraints.  
+Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/basicvalidation-oval](https://github.com/GlueCoders/springboot-guide/releases/tag/basicvalidation-oval)  
 
 ### POM dependency  
 ```
