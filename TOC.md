@@ -8,3 +8,4 @@
 6. [REST documentation with Swagger](/swagger-docs.md)
 7. [Using MongoDB via Spring Data](/mongodb-basics.md)
 8. [Testing MongoDB Repositories](/testing-mongodb-springdata.md)
+9. [OVal Validation for Requests](/requestvalidation-oval.md)
