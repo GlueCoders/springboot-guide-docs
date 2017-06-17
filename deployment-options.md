@@ -38,7 +38,8 @@ It can be verified from the logs that `jetty` is being used as servlet container
 
 ### Packaging Application as War for external container  
 
-1. Explicitly add scope to tomcat library as provided.  
+1. Explicitly add scope to tomcat library as provided.
+
 ```
  <dependency>
    <groupId>org.springframework.boot</groupId>
@@ -48,12 +49,14 @@ It can be verified from the logs that `jetty` is being used as servlet container
 </dependency>
 ```
 
-2. Change packaging type to `war`.  
+2. Change packaging type to `war`.
+
 ```
 <packaging>war</packaging>
 ```
 
-3. Extend `SpringBootServletInitializer` class from `Application`.  
+3. Extend `SpringBootServletInitializer` class from `Application`.
+
 ```
 package org.gluecoders.library;
 
