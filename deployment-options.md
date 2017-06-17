@@ -38,6 +38,45 @@ It can be verified from the logs that `jetty` is being used as servlet container
 
 ### Packaging Application as War for external container  
 
+1. Explicitly add scope to tomcat library as provided.  
+```
+ <dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-tomcat</artifactId>
+   <version>${spring.version}</version>
+   <scope>provided</scope>
+</dependency>
+```
+
+2. Change packaging type to `war`.  
+```
+<packaging>war</packaging>
+```
+
+3. Extend `SpringBootServletInitializer` class from `Application`.  
+```
+package org.gluecoders.library;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+public class Application extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(Application.class);
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+```  
+
+4. Add web.xml in under src/main/webapp/WEB-INF folder
 
 
 [Prev](/requestvalidation-oval.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](#)
