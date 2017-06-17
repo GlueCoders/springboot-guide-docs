@@ -81,7 +81,8 @@ public class Application extends SpringBootServletInitializer {
 }
 ```  
 
-- Add web.xml in under src/main/webapp/WEB-INF folder
+- Add web.xml in under src/main/webapp/WEB-INF folder.
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
