@@ -1,2 +1,6 @@
 # Google services
 google_analytics: UA-101210329-1
+# Disqus Comments
+disqus:
+    shortname: springbootguide
+

@@ -6,5 +6,8 @@
 <div class="container markdown-body">
         {{ content }}
 </div>
+{% if site.disqus.shortname %}
+{% include disqus_comments.html %}
+{% endif %}
 </body>
 </html>
