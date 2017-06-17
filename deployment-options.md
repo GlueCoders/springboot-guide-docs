@@ -106,9 +106,6 @@ public class Application extends SpringBootServletInitializer {
         <servlet-name>appServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
-    <!-- Disables Servlet Container welcome file handling. Needed for compatibility
-        with Servlet 3.0 and Tomcat 7.0 -->
     <welcome-file-list>
         <welcome-file></welcome-file>
     </welcome-file-list>
