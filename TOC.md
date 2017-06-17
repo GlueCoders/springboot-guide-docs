@@ -10,3 +10,4 @@
 8. [Testing MongoDB Repositories](/testing-mongodb-springdata.md)
 9. [OVal Validation for Requests](/requestvalidation-oval.md)
 10. [Deployment Options](/deployment-options.md)
+11. [Extending MongoDB Repository behavior](/custom-mongodb.md)
