@@ -1,7 +1,7 @@
 ## Extending MongoDB repositories by writing custom implementations
 
 Let's implement search functionality for Books. As defined in the [specs](/domain-of-guide.md) one can search for books by categories, title, author and publishedYear.  
-(/https://github.com/GlueCoders/springboot-guide/releases/tag/custom-mongodb)Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/custom-mongodb](/https://github.com/GlueCoders/springboot-guide/releases/tag/custom-mongodb)
+Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/custom-mongodb](/https://github.com/GlueCoders/springboot-guide/releases/tag/custom-mongodb)
 
 ### Text Index on Author and Title
 Since title and author fields will be searched using text operator, MongoDB will require an index created as below:
