@@ -11,3 +11,4 @@
 9. [OVal Validation for Requests](/requestvalidation-oval.md)
 10. [Deployment Options](/deployment-options.md)
 11. [Extending MongoDB Repository behavior](/custom-mongodb.md)
+12. [Exception Mappers using Spring MVC Controller Advice](/mvc-exceptionmapper.md)
