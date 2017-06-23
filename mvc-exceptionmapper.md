@@ -97,7 +97,7 @@ public enum StatusCode implements IntSupplier{
 
 ### ExceptionHandler - RestControllerAdvice
 
-`RestControllerAdvice` annotated classes can define `ExceptionHandler` which will be catch the defined exception from all the controllers by default.  
+`RestControllerAdvice` annotated classes can define `ExceptionHandler` which will catch the exception(provided in annotation value) from all the controllers by default.  
 ```
 package org.gluecoders.library.rest.helper;
 
