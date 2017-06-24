@@ -186,4 +186,4 @@ public ResponseEntity<Book> addBook(@RequestBody Book book) throws ValidationExc
 By default the methods in an `@RestControllerAdvice` apply globally to all Controllers. Use selectors `annotations()`, `basePackageClasses()`, and `basePackages()` to define a more narrow subset of targeted Controllers. If multiple selectors are declared, OR logic is applied, meaning selected Controllers should match at least one selector.  
 
 
-[Prev](/custom-mongodb.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](#)
+[Prev](/custom-mongodb.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/configuration-profiles.md)
