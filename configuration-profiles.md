@@ -19,5 +19,4 @@ By default application.properties will be picked. If profile `uat` is passed in 
 `java -jar <jarname>.jar --spring.profiles.active=uat`
 
 
-[Prev](/mvc-exceptionmapper.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](#)
-
+[Prev](/mvc-exceptionmapper.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TOC](/TOC.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next](/basic-auth-springsecurity.md)
