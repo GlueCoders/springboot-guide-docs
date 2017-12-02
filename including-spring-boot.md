@@ -14,16 +14,21 @@ By inheriting from Spring Boot parent pom, all the dependencies and plugin are m
   </parent>  
 ```  
 ### spring-boot-dependencies  
-In case one cannot inherit Spring Boot parent pom, then alternative is to declare a dependency on `spring-boot-dependencies` under `dependencies` tag as shown below  
+In case one cannot inherit Spring Boot parent pom, then alternative is to declare a dependency on `spring-boot-dependencies` under `dependencyManagement` tag as shown below  
 ```
-  <dependency>
-  	<groupId>org.springframework.boot</groupId>
-  	<artifactId>spring-boot-dependencies</artifactId>
-  	<version>${spring.version}</version>
-  	<type>pom</type>
-  </dependency>  
+  <dependencyManagement>
+      <dependencies>
+          <dependency>
+              <!-- Import dependency management from Spring Boot -->
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-dependencies</artifactId>
+              <version>1.5.8.RELEASE</version>
+              <type>pom</type>
+              <scope>import</scope>
+          </dependency>
+      </dependencies>
+  </dependencyManagement>  
 ```  
-However this does not manages versions for plugins, in this case version has to be explicitly set for plugins.  
 
 Note : Including Parent pom or `spring-boot-dependencies` does not actually bring in any dependencies, they are just mechanisms to manage dependencies related to Spring Boot.
 
