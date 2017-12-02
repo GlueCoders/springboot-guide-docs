@@ -1,6 +1,6 @@
 ## ActiveMQ Integration  
 
-In this post Apache ActiveMQ will be integrated using Spring JMS libraries. Note that an inmemory broker is used for easy demo purposes.  
+In this post Apache ActiveMQ will be integrated using Spring JMS libraries. Note that an inmemory broker is used for easy demo purposes. Code reference: [https://github.com/GlueCoders/springboot-guide/releases/tag/activemq-integration](https://github.com/GlueCoders/springboot-guide/releases/tag/activemq-integration)  
 
 ### POM Dependency  
 Like all other modules Spring Boot has starter for ActiveMQ too. Following are the dependencies required.  
