@@ -4,3 +4,5 @@ google_analytics: UA-101210329-1
 disqus:
     shortname: springbootguide
 
+
+theme: jekyll-theme-minimal
