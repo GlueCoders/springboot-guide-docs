@@ -3,9 +3,13 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 {% include head.html %}
 <body>
+          <nav class="page-nav clearfix" data-offset-top="90" data-offset-bottom="500">
+        {% include page-toc.html html=content h_min=2 h_max=3 class="nav" %}
+      </nav>
 <div class="container markdown-body">
         {{ content }}
 </div>
+      
 </br></br></br>
 {% if site.disqus.shortname %}
 {% include disqus_comments.html %}
